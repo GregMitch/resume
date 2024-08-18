@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Gregory Mitchell} \\ \vspace{1pt}
+    \small 613-207-3865 $|$ \href{mailto:grmitch1@gmail.com}{\underline{grmitch1@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/gregmitch}{\underline{linkedin.com/in/gregmitch}} $|$
+    \href{https://github.com/GregMitch}{\underline{github.com/GregMitch}}
+\end{center}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages \& Databases}{: Rust, C/C++, Python, Java, JavaScript, PostgreSQL, Cosmos DB} \\
+      \textbf{Developer Tools}{: Git, Docker, Jenkins, WinDbg, AWS Lambda, Amazon EC2, Jira} \\
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer}{Jan 2023 -- Present}
+      {Trend Micro}{Ottawa, ON}
+      \resumeItemListStart
+        \resumeItem{Developed a Windows registry scanner for the Integrity Monitor rewrite as part of the \href{https://www.trendmicro.com/en_ca/business/products/hybrid-cloud/deep-security.html}{\underline{Deep Security}} product.}
+        \resumeItem{Enhanced Jenkins infrastructure to increase the maximum product version limit by 100\% and support hotfixes.}
+        \resumeItem{Initiated porting C++ features to Rust \& presented training material accessible to 7000+ employees globally.}
+        \resumeItem{Implemented database migration so users can seamlessly upgrade from the legacy version to the latest.}
+        \resumeItem{Resolved customer-reported issues with the legacy Log Inspection module and provided timely solutions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer CO-OP}{May. 2022 -- Aug 2022}
+      {Trend Micro}{Ottawa, ON}
+      \resumeItemListStart
+        \resumeItem{Implemented rule metrics in the Application Control feature resulting in faster diagnosis for customer issues.}
+        \resumeItem{Patched a PowerShell vulnerability by parsing scripts and ensuring only pre-authorized scripts are executed.}
+        \resumeItem{Optimized \& enhanced wildcard matching algorithm with dynamic programming to include globstar support.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Tester CO-OP}{May 2021 -- Aug 2021}
+      {Nokia}{Ottawa, ON}
+      \resumeItemListStart
+        \resumeItem{Created automated test suites in JavaScript with Selenium \& Mocha to verify \href{https://www.nokia.com/networks/ip-networks/network-services-platform/}{\underline{web application}} functionality.}
+        \resumeItem{Updated legacy automation test suites to maintain a success rate of greater than 95\%.}
+        \resumeItem{Utilized XML scripts to modify user permissions and network nodes, decreasing configuration time by 50\%.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Automation Engineer CO-OP}{Sept 2020 -- Dec 2020}
+      {Nokia}{Ottawa, ON}
+      \resumeItemListStart
+        \resumeItem{Designed automated TCL scripts to test router MACsec functionalities to comply with the 802.1AE standard.}
+        \resumeItem{Maintained Nokia-Cisco-Juniper MACsec interoperability tests, ensuring compatibility between routers.}
+        \resumeItem{Verified bug fixes in customer environments and raised a ticket when new issues were found.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Side Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Member Engagement Lead} $|$ \emph{Python, CSV, Git, Discord, Reverse Engineeing}}{Google Developer Student Club}
+          \resumeItemListStart
+            \resumeItem{Organized and moderated community events on Discord to engage members and host networking events.}
+            \resumeItem{Co-hosted a \href{https://www.youtube.com/watch?v=CBb6tFfmoBI}{\underline{cyber-security workshop}} explaining different types of malware and common attacks.}
+            \resumeItem{Made a \href{https://github.com/GregMitch/Attendance-Checker}{\underline{CSV pasrer}} with Python to determine who attended the most events and distributed prizes.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/The-Homiesexuals/imghost/commits/master?author=GregMitch}{\underline{Imghost}}} $|$ \emph{Python, Flask, sqlite3, Amazon S3, Git}}{uOttaHack2021}
+          \resumeItemListStart
+            \resumeItem{Developed a website to host, share and tag user-uploaded images with team at uOttaHack2021.}
+            \resumeItem{Implemented backend routing using Python Flask to handle HTTP requests, returning formatted JSONs.}
+            \resumeItem{Generated readable random phrases with Python for use as image ids that pointed to internal image links.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+ %-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Ottawa}{Ottawa, ON}
+    {Bachelor of Applied Science in Software Engineering: 3.7 GPA}{Sept. 2018 -- Jan 2023}
+\resumeSubHeadingListEnd
+\resumeItemListStart
+  \resumeItem{Admissions Scholarship: \$3000}
+  \resumeItem{Data Structures \& Algorithms, Software Architecture, Quality Assurance, Software Requirements, Databases}
+\resumeItemListEnd
+
+%-------------------------------------------
+\end{document}
