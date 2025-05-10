@@ -83,6 +83,13 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSubheadingContinue}[2]{
+  \vspace{-1pt}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -123,7 +130,7 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      \textbf{Languages \& Databases}{: Rust, C/C++, Python, Java, JavaScript, PostgreSQL, Cosmos DB} \\
+      \textbf{Languages \& Databases}{: Rust, C/C++, Java, Kotlin, Python, PostgreSQL, Cosmos DB} \\
       \textbf{Developer Tools}{: Git, Docker, Jenkins, WinDbg, AWS Lambda, Amazon EC2, Jira} \\
     }}
  \end{itemize}
@@ -134,7 +141,15 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Software Developer}{Jan 2023 -- Present}
+      {Senior Software Developer}{Mar 2025 -- Present}
+      {Trend Micro}{Ottawa, ON}
+      \resumeItemListStart
+        \resumeItem{Coordinated a cross-team effort to merge divergent implementations of the App Control feature, contributing to the architecture of a unified solution under a tight deadline.}
+        \resumeItem{Extended wildcard engine in C to support glob (*) patterns for the Log Inspection module, enabling consistent matching across platforms.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Software Developer}{Jan 2023 -- Mar 2025}
       {Trend Micro}{Ottawa, ON}
       \resumeItemListStart
         \resumeItem{Developed a Windows registry scanner for the Integrity Monitor rewrite as part of the \href{https://www.trendmicro.com/en_ca/business/products/hybrid-cloud/deep-security.html}{\underline{Deep Security}} product.}
@@ -143,7 +158,7 @@
         \resumeItem{Implemented database migration so users can seamlessly upgrade from the legacy version to the latest.}
         \resumeItem{Resolved customer-reported issues with the legacy Log Inspection module and provided timely solutions.}
       \resumeItemListEnd
-
+      
     \resumeSubheading
       {Software Developer CO-OP}{May. 2022 -- Aug 2022}
       {Trend Micro}{Ottawa, ON}
@@ -178,11 +193,11 @@
 \section{Side Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Member Engagement Lead} $|$ \emph{Python, CSV, Git, Discord, Reverse Engineeing}}{Google Developer Student Club}
+          {\textbf{Member Engagement Lead} $|$ \emph{Python, CSV, Git, Discord, Reverse Engineering}}{Google Developer Student Club}
           \resumeItemListStart
             \resumeItem{Organized and moderated community events on Discord to engage members and host networking events.}
             \resumeItem{Co-hosted a \href{https://www.youtube.com/watch?v=CBb6tFfmoBI}{\underline{cyber-security workshop}} explaining different types of malware and common attacks.}
-            \resumeItem{Made a \href{https://github.com/GregMitch/Attendance-Checker}{\underline{CSV pasrer}} with Python to determine who attended the most events and distributed prizes.}
+            \resumeItem{Made a \href{https://github.com/GregMitch/Attendance-Checker}{\underline{CSV parser}} with Python to determine who attended the most events and distributed prizes.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{\href{https://github.com/The-Homiesexuals/imghost/commits/master?author=GregMitch}{\underline{Imghost}}} $|$ \emph{Python, Flask, sqlite3, Amazon S3, Git}}{uOttaHack2021}
